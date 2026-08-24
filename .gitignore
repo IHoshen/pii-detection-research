@@ -1,0 +1,79 @@
+# ============================================================
+#  PII Detection Research — .gitignore
+# ============================================================
+
+# ---------- Datasets (stored externally: local + Drive) ------
+*.csv
+*.tsv
+*.json
+*.jsonl
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.zip
+*.7z
+*.tar.gz
+
+# Documentation spreadsheets ARE tracked
+!*Scraping documentation.xlsx
+
+# ---------- Model artifacts ---------------------------------
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+*.bin
+*.onnx
+*.safetensors
+*.joblib
+checkpoints/
+saved_models/
+
+# ---------- Secrets & credentials ---------------------------
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+credentials.json
+secrets.yaml
+service_account*.json
+token.json
+
+# ---------- Python ------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.conda/
+
+# ---------- Jupyter -----------------------------------------
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+nbconvert_output/
+
+# ---------- Experiment tracking -----------------------------
+wandb/
+mlruns/
+runs/
+logs/
+*.log
+
+# ---------- IDE ---------------------------------------------
+.vscode/
+.idea/
+*.code-workspace
+
+# ---------- OS / OneDrive -----------------------------------
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+*~
+*.tmp
+~$*
+.~lock.*
