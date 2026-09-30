@@ -77,6 +77,11 @@ Stage 2 branches into two independent predictive approaches.
 ```
 pii-detection-research/
 │
+├── Data Samples/             # raw scraped data samples (one CSV per platform)
+│   ├── facebook dataset - sample.csv
+│   ├── linkedin dataset - sample.csv
+│   └── x dataset - sample.csv
+│
 ├── Bert Models/              # Stage 1 — PII extraction
 │   ├── Facebook/
 │   ├── LinkedIn/
@@ -102,6 +107,10 @@ pii-detection-research/
 
 Each stage directory contains its own `README.md` describing the files
 within it.
+
+`Data Samples/` holds raw data: samples of the posts scraped from each
+social network (Facebook, LinkedIn, X), before any processing or PII
+extraction.
 
 ---
 
@@ -179,8 +188,6 @@ documents, which are included in this repository. Access to the underlying
 data may be requested for academic review purposes.
 
 ---
-
-## 6. Ethics and Privacy
 
 ## 6. Ethics and Privacy
 
